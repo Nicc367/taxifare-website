@@ -1,5 +1,6 @@
 import requests
 import streamlit as st
+import pandas as pd
 
 '''
 # TaxiFareModel front
@@ -55,10 +56,6 @@ if st.button("Get Fare Prediction"):
         st.success(f"The predicted fare is: ${prediction}")
     else:
         st.error("Error in API request. Please try again.")
-
-
-import streamlit as st
-import pandas as pd
 
 st.title("Taxi Fare Predictor with Map")
 
